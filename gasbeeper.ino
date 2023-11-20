@@ -12,7 +12,7 @@ void loop()
   int sensorValue = analogRead(A0);
   if (sensorValue > 300)
   {
-    digitalWrite(BUZZER_PIN, 50);
+    digitalWrite(BUZZER_PIN, HIGH);
     digitalWrite(light, HIGH);
     delay(1000);
     digitalWrite(light, LOW);
@@ -20,7 +20,7 @@ void loop()
   }
   else
   {
-    digitalWrite(BUZZER_PIN, 0);
+    digitalWrite(BUZZER_PIN, LOW);
     digitalWrite(light, LOW);  
   }
   delay(1000);
